@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => ProductCardDetails(),
       child: const MaterialApp(
-
           debugShowCheckedModeBanner: false,
           title: 'Ecommerce Ui',
           home: HomePage()),

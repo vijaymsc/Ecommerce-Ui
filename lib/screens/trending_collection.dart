@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../Constance/common_constance.dart';
 import '../custom_Widgets/custom_productBanner.dart';
+
 class TrendingCollection extends StatefulWidget {
   const TrendingCollection({super.key});
 
@@ -57,7 +58,7 @@ class _TrendingCollectionState extends State<TrendingCollection> {
                           bannerTag: true,
                           tagTitle: "Women",
                           imageUrl:
-                          'assets/product_banner/product_banner2.png'),
+                              'assets/product_banner/product_banner2.png'),
                     ),
                   ),
                   const SizedBox(
@@ -78,44 +79,44 @@ class _TrendingCollectionState extends State<TrendingCollection> {
                           bannerTag: true,
                           tagTitle: "Men",
                           imageUrl:
-                          'assets/product_banner/product_banner3.png'),
+                              'assets/product_banner/product_banner3.png'),
                     ),
                   ),
                 ],
               ),
               (!isWomanShow && !isMenShow)
                   ? Positioned(
-                  left: 80,
-                  top: 15,
-                  bottom: 10,
-                  right: 10,
-                  child: SizedBox(
-                    height: MediaQuery.of(context).size.height * 1,
-                    width: MediaQuery.of(context).size.width * 1,
-                    child: GridView.builder(
-                      gridDelegate:
-                      const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount:
-                          2, // number of items in each row
-                          mainAxisSpacing: 6.0, // spacing between rows
-                          crossAxisSpacing: 6.0,
-                          childAspectRatio: 1.1
-                        // mainAxisExtent: 130, // spacing between columns
-                      ),
-                      itemCount: CommonConstance.cloths.length,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              image: DecorationImage(
-                                  image: AssetImage(
-                                      CommonConstance.cloths[index]),
-                                  fit: BoxFit.fill),
-                              color: Colors.grey),
-                        );
-                      },
-                    ),
-                  ))
+                      left: 80,
+                      top: 15,
+                      bottom: 10,
+                      right: 10,
+                      child: SizedBox(
+                        height: MediaQuery.of(context).size.height * 1,
+                        width: MediaQuery.of(context).size.width * 1,
+                        child: GridView.builder(
+                          gridDelegate:
+                              const SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount:
+                                      2, // number of items in each row
+                                  mainAxisSpacing: 6.0, // spacing between rows
+                                  crossAxisSpacing: 6.0,
+                                  childAspectRatio: 1.1
+                                  // mainAxisExtent: 130, // spacing between columns
+                                  ),
+                          itemCount: CommonConstance.cloths.length,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          CommonConstance.cloths[index]),
+                                      fit: BoxFit.fill),
+                                  color: Colors.grey),
+                            );
+                          },
+                        ),
+                      ))
                   : const SizedBox.shrink()
             ],
           ),

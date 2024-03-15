@@ -35,5 +35,3 @@ class _ProductHomePageState extends State<ProductHomePage> {
     );
   }
 }
-
-

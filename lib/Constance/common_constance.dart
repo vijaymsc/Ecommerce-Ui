@@ -2,8 +2,7 @@ import 'dart:ui';
 
 import '../screens/myCartPage/model/productDetails_model.dart';
 
-class CommonConstance{
-
+class CommonConstance {
   ///colors
   static const primaryColor = Color(0xff9F511E);
   static const secondaryColor = Color(0xff3b3b42);
@@ -55,7 +54,7 @@ class CommonConstance{
     ),
     ProductDetails(
       productImage: 'assets/children_clothes/children_cloth5.png',
-      productName: "Cotton T-Shert",
+      productName: "Cotton T-Shirt",
       productSize: "S",
       productPrize: 180,
       totalPrice: 180,
