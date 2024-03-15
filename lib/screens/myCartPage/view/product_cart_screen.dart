@@ -55,6 +55,7 @@ class _ProductCartPageState extends State<ProductCartPage> {
                 children: [
                   Dismissible(
                     key: Key(item.productImage!),
+                    direction: DismissDirection.endToStart,
                     background: Container(
                         color: Colors.red.shade100,
                         alignment: Alignment.centerRight,
